@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			 	<meta charset="UTF-8">
+ 			  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  			<meta name="og:image" content=""/>
+ 				<meta name="author" content="DenZ" />
+			  <meta name="description" content="Fnovels is a website that contains a lot of free light novels that you may download. Enjoy this free service from us!" />
+ 				<meta property="og:site_name" content="Fnovels - Free Light Novels"/>
+ 				<meta property="og:type" content="website"/>
+ 				<meta property="og:image" content="logo.png" />
+ 				<meta property="facebook:image" content="logo.png"/>
+ 				<!-- W3 CSS Frameworks -->
+ 			  <link rel="stylesheet" href="w3.css"/>
+<style>
+				*{margin:0;padding:0;box-sizing:border-box}
+				a:hover{color:inherit}
+				body{max-width:100%}
+				div.main-container{max-width:100%;height:auto;background-color:#dfdfdf}
+				div.navigation{position:sticky;top:0}
+	   div.menu-btn{width:auto;height:inherit;font-size:20px;text-align:center;margin:7px 5px}
+				.menu-btn:hover{border:1px solid #a6a6a6;border-radius:5px}
+				.webtitle h3{color:#e0a613}
+				.menu-content{width:100%;height:0;display:block}
+				.menu-item{display:inline-block;width:100%;text-align:center;padding:5px}
+				.menu-item > a{color:#fff;text-decoration:none}
+				.menu-item > a:hover{color:inherit}
+				.post-content{max-width:100%;height:auto;border-radius:5px;background-color:#ffffff;margin:5px 10px}
+				.post-content > .items{max-width:100%;height:auto}
+				.post-content > .items h5{width:inherit;color:#000;font-weight:800;padding:5px 5px 0 5px}
+				.post-content > .items img{width:100%}
+				.post-content > .items article{position:relative;width:inherit;padding:5px 7px}
+				.post-content > .items article a{color:#55acff;text-decoration:none}
+			.paginator{margin:5px 10px}
+</style>
+</head>
+<body>
+			<div class="main-container">
+							<div class="navigation w3-bar w3-black">
+											<div class="menu-btn w3-bar-item">
+															<span>☰</span>
+										  </div>
+										  <div class="webtitle">
+										  				<h3>FNovels</h3>
+										  </div>
+										  <!--Menu Content-->
+										  <div class="menu-content">
+										  			<div class="menu-item"><a href="#">Home</a></div>
+										  			<div class="menu-item"><a href="#">About</a></div>
+										  			<div class="menu-item"><a href="#">Light Novel List</a></div>
+										  			<form action="get" class="w3-container">
+										  						<input class="w3-input w3-round" style="margin-bottom:5px" type="search" name="browse" id="search" placeholder="Search with English title">
+										  			</form>
+										  </div>
+							</div>
+							<!-- Recommendation -->
+							<div class="recommendation">
+											
+							</div>
+							<!-- Post Content -->
+							<div class="post-content">
+										<div class="items">
+													<h5>Majo No Tabitabi</h5>
+													<img src="images/1-32.jpg" alt="Cover"></img>
+													<article>Download name volumes for free 
+													  <br/><a href="#" onclick="alert('This content is under development!')">Visit Original Post</a>
+													</article>
+										</div>
+							</div>
+							<div class="paginator w3-bar w3-white w3-round" style="width:auto">
+										<a href="#" class="w3-bar-item w3-btn">&lt;</a>
+										<a href="#" class="w3-bar-item w3-btn">1</a>
+										<a href="#" class="w3-bar-item w3-btn">2</a>
+										<a href="#" class="w3-bar-item w3-btn">3</a>
+										<a href="#" class="w3-bar-item w3-btn">&gt;</a>
+							</div>
+							<footer class="w3-footer w3-center"><p style="font-size:10px">©Fnovels Project 2022</p></footer>
+			</div>
+<script src="jquery-3.6.0.js"></script>
+<script>
+			$(document).ready(function(){
+			   //Menu Button Action
+       let menuBtn = $(".menu-btn");
+       let content = $(".menu-content");
+       menuBtn.click(function(){
+          //Check if menu content is showed or not
+          content.height("auto").toggle("1000");
+       });
+			})
+</script>
+</body>
+</html>
